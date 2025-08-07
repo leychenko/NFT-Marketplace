@@ -1,0 +1,202 @@
+//====================================================================================================
+.footer {
+  @include adaptiveValue("padding-top", 48, 40);
+  @include adaptiveValue("padding-bottom", 48, 29);
+  background: #1d1e22;
+  // .footer__container
+  &__container {
+	display: grid;
+	@media (max-width:$tablet){
+		justify-items: center;
+	}
+  }
+  // .footer__container-small
+  &__container-small {
+    @include adaptiveValue("padding-right", 72, 0);
+    @include adaptiveValue("padding-left", 72, 0);
+  }
+  // .footer__content
+  &__content {
+    display: grid;
+    grid-template-columns: rem(150) repeat(2, 1fr);
+    @include adaptiveValue("column-gap", 150, 32);
+	 row-gap: rem(32);
+	 align-items: center;
+    @include adaptiveValue("padding-bottom", 48, 32);
+	 @media (max-width: em(1200)){
+		  grid-template-columns: repeat(2, 1fr);
+	 }
+	 @media (max-width:$tablet){
+		 grid-template-columns: auto;
+	 }
+  }
+  // .footer__columns
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	 @media (max-width:$tablet){
+		@include adaptiveValue("column-gap", 50, 10);
+		grid-column: span 2;
+		justify-self: center;
+		text-align: center;
+	 }
+	 @media (max-width: em(450)){
+		  display: flex;
+		  flex-direction: column;
+		  row-gap: rem(40);
+	 }
+
+  }
+  // .footer__logo
+  &__logo {
+	@media (max-width:$tablet){
+		display: none;
+	}
+  }
+  // .footer__column
+  &__column {
+    display: flex;
+    flex-direction: column;
+	 padding-right: rem(10);
+  }
+  // .footer__menu
+  &__menu {
+  }
+  // .footer__form
+  &__form {
+		 @media (max-width: em(1200)){
+		  grid-column: span 2;
+	 }
+  }
+  // .footer__info
+  &__info {
+  }
+}
+.column {
+  // .column__title
+  &__title {
+    font-family: "MonumentExtended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: math.div(18, 18);
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+}
+.menu-footer {
+  // .menu-footer__body
+  &__body {
+  }
+  // .menu-footer__list
+  &__list {
+  }
+  // .menu-footer__item
+  &__item {
+  }
+  // .menu-footer__link
+  &__link {
+    font-size: rem(16);
+    line-height: math.div(30, 16);
+    color: #dfe5f5;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.form {
+  background: $greenColor;
+  padding-right: rem(48);
+  padding-left: rem(48);
+  @include adaptiveValue("padding-top", 80, 60);
+  @include adaptiveValue("padding-bottom", 80, 60);
+  border-radius: rem(30);
+
+  // .form__title
+  &__title {
+    font-family: "MonumentExtended";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: math.div(29, 24);
+    letter-spacing: 0.04em;
+    color: #1d1e22;
+    margin-bottom: rem(15);
+    @media (max-width: $mobile) {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: rem(20);
+      line-height: math.div(30, 20);
+      color: #1d1e22;
+    }
+  }
+  // .form__line
+  &__line {
+    max-width: rem(400);
+    position: relative;
+	 @media (max-width: em(1200)){
+		  max-width: 100%;
+	 }
+  }
+  // .form__input
+  &__input {
+	outline: none;
+  }
+  // .form__button
+  &__button {
+    position: absolute;
+    top: rem(5);
+    right: 0;
+    color: #1d1e22;
+  }
+}
+
+.info-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: rem(16);
+  align-items: center;
+  line-height: math.div(30, 16);
+  color: #dfe5f5;
+  @media (max-width:$tablet){
+	display: flex;
+	flex-direction: column-reverse;
+	gap: rem(30);
+  }
+  // .info__reserved
+  &__reserved {
+  }
+  // .info__privacy
+  &__privacy {
+	justify-self: center;
+  }
+  // .info__social
+  &__social {
+  }
+  // .info__list
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(24);
+    color: #818698;
+  }
+  // .info__item
+  &__item {
+  }
+  // .info__link
+  &__link {
+    font-size: rem(24);
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $greenColor;
+      }
+    }
+  }
+}
+
+//====================================================================================================

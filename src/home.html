@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__main main-page">
+          <div class="main-page__container">
+            <div class="main-page__content content">
+              <div class="content__titles">
+                <h2 class="content__subtitle">NFT Marketplace</h2>
+                <h1 class="content__title">Collect rare digital artworks</h1>
+              </div>
+              <div class="content__actions action-content">
+                <div class="action-content__block">
+                  <button type="button" class="action-content__button button">
+                    <span>Explore</span>
+                  </button>
+                  <div class="action-content__image">
+                    <img src="@img/main-image/creators.png" alt="image" />
+                    <div class="action-content__decor"></div>
+                  </div>
+                </div>
+                <div class="action-content statistic">
+                  <ul class="statistic__list">
+                    <li class="statistic__item">50K<span>Artwork</span></li>
+                    <li class="statistic__item">35K<span>Auction</span></li>
+                    <li class="statistic__item">23K+<span>Artist</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__picture">
+              <div class="main-page__shadow"></div>
+              <div class="main-page__image-ibg">
+                <img src="@img/main-image/image-main.png" alt="image" />
+              </div>
+              <a target="_blank" href="#" class="main-page__play"
+                ><span class="_icon-play"></span
+              ></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__categories categories">
+          <div class="categories__container">
+            <h2 class="categories__title title">popular categories</h2>
+            <!-- Оболонка слайдера -->
+            <div class="categories__slider swiper">
+              <!-- Частина слайдера, що рухається -->
+              <div class="categories__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Games</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Sports</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image3.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Metaverse</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image4.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Art</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image5.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Music</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image6.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Photography</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image3.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Metaverse</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image5.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Music</div>
+                  </article>
+                </div>
+                <div class="categories__slide swiper-slide">
+                  <article class="categories__item item">
+                    <div class="item__foto-ibg">
+                      <img
+                        src="@img/main-image/popular-image/image1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="item__text">Games</div>
+                  </article>
+                </div>
+              </div>
+              <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+              <div class="categories__pagination swiper-pagination"></div>
+            </div>
+            <button
+              type="button"
+              class="categories__button categories__button_left _icon-vector"
+            ></button>
+            <button
+              type="button"
+              class="categories__button categories__button_right _icon-vector"
+            ></button>
+          </div>
+        </section>
+
+        <section class="page__collections collections">
+          <div class="collections__container">
+            <div class="collections__head">
+              <h2 class="collections__title title">top collections</h2>
+              <div class="collections__actions">
+                <button type="button" class="collections__button">
+                  <span>7 days</span>
+                </button>
+                <button type="button" class="collections__button">
+                  <span>30 days</span>
+                </button>
+              </div>
+            </div>
+            <div class="collections__cards">
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>3</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image1.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">NFT Worlds</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.80ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>4</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image2.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Etherpilots</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.05ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>7</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Mineblowings</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.07ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>5</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image4.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Super Worlds</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.70ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>9</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image5.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Kive Core</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.06ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>8</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image6.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">NFT Flow</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.50ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>6</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image2.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Bidether</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.10ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>10</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image1.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Varipack</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.90ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>2</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image5.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Nether</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.08ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>5</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image6.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Moonther</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.10ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>4</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Proof Corn</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.90ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="collections__card">
+                <a href="#" class="collections__item item-collections">
+                  <div class="item-collections__picture">
+                    <span>1</span>
+                    <div class="item-collections__image-ibg">
+                      <img
+                        src="@img/main-image/collections/image1.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="item-collections__content">
+                    <div class="item-collections__body">
+                      <div class="item-collections__label">Parallel</div>
+                      <span class="item-collections__sub-label"
+                        >Floor: 0.08ETH</span
+                      >
+                    </div>
+                    <div class="item-collections__info info">
+                      <span class="info__head">5.8k ETH</span>
+                      <span class="info__center">$8.4M</span>
+                      <span class="info__end">+294.7%</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="collections__control">
+              <button type="button" class="item-collections__button button">
+                <span>See All Collection</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__tranding tranding">
+          <div class="tranding__container">
+            <h2 class="tranding__title title">Tranding nfts</h2>
+            <!-- Оболонка слайдера -->
+            <div class="tranding__slider swiper">
+              <!-- Частина слайдера, що рухається -->
+              <div class="tranding__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="tranding__slide swiper-slide">
+                  <article class="tranding__card">
+                    <a href="#" class="tranding__item">
+                      <div class="tranding__picture">
+                        <div class="tranding__image-ibg">
+                          <img
+                            src="@img/main-image/tranding/image1.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                      <div class="tranding__body">
+                        <div class="tranding__head head">
+                          <p class="head__title">Rare Crypto</p>
+                          <span class="head__sub-title">#QA5200 The Kive</span>
+                        </div>
+                        <div class="tranding__footer footer-tranding">
+                          <div class="footer-tranding__shadow"></div>
+                          <div class="footer-tranding__body">
+                            <div class="footer-tranding__text">
+                              <p>Price</p>
+                              <span>0.03 ETH</span>
+                            </div>
+                            <div class="footer-tranding__text">
+                              <p>Highest Bid</p>
+                              <span>0.07 ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tranding__slide swiper-slide">
+                  <article class="tranding__card">
+                    <a href="#" class="tranding__item">
+                      <div class="tranding__picture">
+                        <div class="tranding__image-ibg">
+                          <img
+                            src="@img/main-image/tranding/image2.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                      <div class="tranding__body">
+                        <div class="tranding__head head">
+                          <p class="head__title">Rare Crypto</p>
+                          <span class="head __sub-title">#QA5200 The Kive</span>
+                        </div>
+                        <div class="tranding__footer footer-tranding">
+                          <div class="footer-tranding__shadow"></div>
+                          <div class="footer-tranding__body">
+                            <div class="footer-tranding__text">
+                              <p>Price</p>
+                              <span>0.03 ETH</span>
+                            </div>
+                            <div class="footer-tranding__text">
+                              <p>Highest Bid</p>
+                              <span>0.07 ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tranding__slide swiper-slide">
+                  <article class="tranding__card">
+                    <a href="#" class="tranding__item">
+                      <div class="tranding__picture">
+                        <div class="tranding__image-ibg">
+                          <img
+                            src="@img/main-image/tranding/image3.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                      <div class="tranding__body">
+                        <div class="tranding__head head">
+                          <p class="head__title">Rare Crypto</p>
+                          <span class="head__sub-title">#QA5200 The Kive</span>
+                        </div>
+                        <div class="tranding__footer footer-tranding">
+                          <div class="footer-tranding__shadow"></div>
+                          <div class="footer-tranding__body">
+                            <div class="footer-tranding__text">
+                              <p>Price</p>
+                              <span>0.03 ETH</span>
+                            </div>
+                            <div class="footer-tranding__text">
+                              <p>Highest Bid</p>
+                              <span>0.07 ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tranding__slide swiper-slide">
+                  <article class="tranding__card">
+                    <a href="#" class="tranding__item">
+                      <div class="tranding__picture">
+                        <div class="tranding__image-ibg">
+                          <img
+                            src="@img/main-image/tranding/image4.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                      <div class="tranding__body">
+                        <div class="tranding__head head">
+                          <p class="head__title">Rare Crypto</p>
+                          <span class="head__sub-title">#QA5200 The Kive</span>
+                        </div>
+                        <div class="tranding__footer footer-tranding">
+                          <div class="footer-tranding__shadow"></div>
+                          <div class="footer-tranding__body">
+                            <div class="footer-tranding__text">
+                              <p>Price</p>
+                              <span>0.03 ETH</span>
+                            </div>
+                            <div class="footer-tranding__text">
+                              <p>Highest Bid</p>
+                              <span>0.07 ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="tranding__slide swiper-slide">
+                  <article class="tranding__card">
+                    <a href="#" class="tranding__item">
+                      <div class="tranding__picture">
+                        <div class="tranding__image-ibg">
+                          <img
+                            src="@img/main-image/tranding/image1.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                      <div class="tranding__body">
+                        <div class="tranding__head head">
+                          <p class="head__title">Rare Crypto</p>
+                          <span class="head__sub-title">#QA5200 The Kive</span>
+                        </div>
+                        <div class="tranding__footer footer-tranding">
+                          <div class="footer-tranding__shadow"></div>
+                          <div class="footer-tranding__body">
+                            <div class="footer-tranding__text">
+                              <p>Price</p>
+                              <span>0.03 ETH</span>
+                            </div>
+                            <div class="footer-tranding__text">
+                              <p>Highest Bid</p>
+                              <span>0.07 ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <!-- Якщо потрібна пагінація -->
+              <div class="swiper-pagination"></div>
+              <!-- Якщо потрібен скролбар -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <button
+              type="button"
+              class="tranding__button tranding__button_left swiper-button-prev _icon-vector"
+            ></button>
+            <button
+              type="button"
+              class="tranding__button tranding__button_right swiper-button-next _icon-vector"
+            ></button>
+          </div>
+        </section>
+
+        <section class="page__insights insights">
+          <div class="insights__container">
+            <h2 class="insights__title title">Insights</h2>
+            <div class="insights__card">
+              <article class="insights__item card-item">
+                <div class="card-item__image-ibg">
+                  <img
+                    src="@img/main-image/insights/Insights1.png"
+                    alt="image"
+                  />
+                </div>
+                	<div class="card-item__name">
+	                  <span>TECHNOLOGY</span>
+	                  <p>John Doe • 19 Jan 2022</p>
+	                </div>
+	                <div class="card-item__text">
+	                  <p>Gesture for the people and the culture</p>
+	                </div>
+	                <a href="#" class="card-item__link"
+	                  ><span class="_icon-vector-up">Read More</span></a
+	                >
+              </article>
+
+              <article class="insights__item card-item">
+                	<div class="card-item__image-ibg">
+	                  <img
+	                    src="@img/main-image/insights/Insights2.png"
+	                    alt="image"
+	                  />
+	                </div>
+                	<div class="card-item__name">
+	                  <span>Webiner</span>
+	                  <p>John Doe • 19 Jan 2022</p>
+	                </div>
+	                <div class="card-item__text">
+	                  <p>Mostly metaverse is only as good as its tools and it is totally true.</p>
+	                </div>
+	                <a href="#" class="card-item__link"
+	                  ><span class="_icon-vector-up">Read More</span></a
+	                >
+              </article>
+
+              <article class="insights__item card-item">
+                <div class="card-item__image-ibg">
+                  <img
+                    src="@img/main-image/insights/Insights3.png"
+                    alt="image"
+                  />
+                </div>
+                	<div class="card-item__name">
+	                  <span>Crypto Currency</span>
+	                  <p>John Doe • 19 Jan 2022</p>
+	                </div>
+	                <div class="card-item__text">
+	                  <p>Crypto business is only as good as its tools and it is totally true.</p>
+	                </div>
+	                <a href="#" class="card-item__link"
+	                  ><span class="_icon-vector-up">Read More</span></a
+	                >
+              </article>
+            </div>
+          </div>
+        </section>
+
+		  <section class="page__download download">
+			<div class="download__container">
+				<div class="download__small-container">
+					<h2 class="download__title">Download Qeeb app to track your NFT portfolio and discover more</h2>
+					<div class="download__actions">
+						<a href="#" class="download__button-app button button_shadow _icon-apple"><span>App Store</span></a>
+						<a href="#" class="download__button-android button button_shadow _icon-android"><span>Google Play</span></a>
+						
+					</div>
+				</div>
+			</div>
+		  </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
